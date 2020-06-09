@@ -47,64 +47,71 @@
         <!--SHOWCASE -->
         <header class="showcase">
 
-            <h2>Modulo de Consulta</h2>
-            <p>Dato 1: <input type="text" name="Dato1"></p>
-            <p>Dato 2: <input type="text" name="Dato2"></p>
-            <p>Dato 3: <input type="text" name="Dato3"></p>
-            <p>Dato 4: <input type="text" name="Dato4"></p>
-            <p>Dato 5: <input type="text" name="Dato5"></p>
-            <p>Dato 6: <input type="text" name="Dato6"></p>
+            <h2>Modulo de Captura</h2>
+            <table class="capture">
+                <tr>
+                    <th>Embarque: <br><input type="text" name="embarque"></th>
+                    <th>Cliente: <br><input type="text" name="cliente"></th>
+                    <th>Factura: <br><input type="text" name="factura"></th>
+                    <th>Fecha: <br><input type="date" name="fecha"></th>
+                </tr>
+                <tr>
+                    <th>Origen: <br><input type="text" name="origen"></th>
+                    <th>Destino: <br><input type="text" name="destino"></th>
+                    <th>Transporte: <br><input type="text" name="transporte"></th>
+                    <th>Agente Aduanal: <br><input type="text" name="AA"></th>
+                </tr>
 
-            <br>
+                <tr>
+                    <th>Tipo Documento: <br><input type="text" name="docto"></th>
+                    <th>Valor: <br><input type="number" name="valor"></th>
+                    <th>Aduana Ingreso: <br><input type="text" name="aduana"></th>
+                    <th>Comentarios: <br><input type="text" name="comentarios"></th>
+                </tr>
 
-            <p>            
-                Servicios incluidos:<br>            
-                <input type="checkbox" name="Servicio1"> Servicio 1<br>            
-                <input type="checkbox" name="Servicio2"> Servicio 2<br>            
-                <input type="checkbox" name="Servicio3"> Servicio 3            
-            </p>
+            </table>  
+            <br>          
+            <table class="embarques">
 
-            <br>
+                <tr>                  
+                  <th scope="row" style="color: black; font-size:larger;">Embarque</th>                  
+                  <th scope="row" style="color: black; font-size:larger;">Cliente</th>                  
+                  <th scope="row" style="color: black; font-size:larger;">Factura</th>
+                  <th scope="row" style="color: black; font-size:larger;">Fecha</th>                  
+                  <th scope="row" style="color: black; font-size:larger;">Origen</th>                  
+                  <th scope="row" style="color: black; font-size:larger;">Destino</th>
+                  <th scope="row" style="color: black; font-size:larger;">Transporte</th>                  
+                  <th scope="row" style="color: black; font-size:larger;">Agente Aduanal</th>                  
+                  <th scope="row" style="color: black; font-size:larger;">Tipo documento</th>
+                  <th scope="row" style="color: black; font-size:larger;">Valor</th>
+                  <th scope="row" style="color: black; font-size:larger;">Aduana</th>
+                  <th scope="row" style="color: black; font-size:larger;">Comentarios</th>
+                </tr>
 
-            <p>
-                Valor:<br>
-                <input type="radio" name="ingresos" value="menosde1000"> Menos de $1,000.00<br>            
-                <input type="radio" name="ingresos" value="de1000a5000"> De $1,000.00 a $5,000.00<br>            
-                <input type="radio" name="ingresos" value="masde5000"> Más de $5,000.00            
-            </p>
-
-            <br>
-
-            <p>
-                Aduana de Ingreso:            
-                <select name="Aduana">            
-                <option>Seleccione una opción</option>
-                <option>Guadalajara</option>
-                <option>CDMX</option>
-                <option>Tijuana</option>
-                <option>Manzanillo</option>            
-                </select>        
-            </p>
-
-            <br>
-
-            <p>
-                Comentarios<br>            
-                <textarea name="mensaje"></textarea>            
-            </p>
-
-            <br>
-            
-            <p>
-                <input type="submit" value="  Guardar embarque  ">
-                <br>                
-                <input type="reset" value="  Nuevo embarque  ">            
-            </p>                         
-
+                <tr align="center">                  
+                  <td> </td>                  
+                  <td> </td>                  
+                  <td> </td>
+                  <td> </td>                  
+                  <td> </td>                  
+                  <td> </td>
+                  <td> </td>                  
+                  <td> </td>                  
+                  <td> </td>
+                  <td> </td>                  
+                  <td> </td>                  
+                  <td> </td>                  
+                </tr>  
+                </table>                                                                       
+                <br>
+                    <p>
+                        <input type="submit" class="btn" value="  Guardar embarque  ">                     
+                        <input type="reset" class="btn" value="  Nuevo embarque  ">
+                        <br>
+                        <br>
+                        <br>            
+                    </p>
+        </div>   
         </header>
-
-    </div>
-    
-
-</body>
+    </body>
 </html>
